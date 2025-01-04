@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview",
     "build": "tsc -b && npm run build-content && npm run build-background && npm run build-popup",
     "build-content": "vite build  --config vite.config.content.ts",
     "build-background": "vite build --config vite.config.background.ts",
