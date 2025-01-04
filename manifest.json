@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "description": "My Extension Description",
+  "version": "1.0.0",
+  "permissions": ["scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "32": "assets/icon-32-32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
