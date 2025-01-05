@@ -12,7 +12,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "https://5feet11.com/*",
+        "https://aakartaro.com/products/*",
+        "https://www.botnia.in/products/",
+        "https://www.urbanmonkey.com/products/*",
+        "https://dashanddot.com/products/*"
+      ],
       "js": ["contentScript.js"]
     }
   ],
