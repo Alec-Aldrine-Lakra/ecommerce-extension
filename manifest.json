@@ -16,5 +16,11 @@
       "js": ["contentScript.js"]
     }
   ],
-  "host_permissions": ["http://*/*", "https://*/*"]
+  "host_permissions": [
+    "https://5feet11.com/*",
+    "https://aakartaro.com/products/*",
+    "https://www.botnia.in/products/",
+    "https://www.urbanmonkey.com/products/*",
+    "https://dashanddot.com/products/*"
+  ]
 }

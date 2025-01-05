@@ -5,6 +5,14 @@ import copy from "rollup-plugin-copy";
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+      "@constants": path.resolve(__dirname, "src/constants"),
+      "@content": path.resolve(__dirname, "src/content-scripts"),
+      "@background": path.resolve(__dirname, "src/background-scripts"),
+    },
+  },
   plugins: [
     react(),
     {
