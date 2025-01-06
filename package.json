@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "build": "tsc -b && npm run build-content && npm run build-background && npm run build-popup",
+    "build": "tsc -b && npm run build-content && npm run build-background && npm run build-popup && npm run build-pages",
     "build-content": "vite build  --config vite.config.content.ts",
     "build-background": "vite build --config vite.config.background.ts",
-    "build-popup": "vite build  --config vite.config.popup.ts"
+    "build-popup": "vite build  --config vite.config.popup.ts",
+    "build-pages": "vite build  --config vite.config.pages.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -15,17 +15,23 @@
       "matches": [
         "https://5feet11.com/*",
         "https://aakartaro.com/products/*",
-        "https://www.botnia.in/products/",
+        "https://www.botnia.in/products/*",
         "https://www.urbanmonkey.com/products/*",
         "https://dashanddot.com/products/*"
       ],
       "js": ["contentScript.js"]
     }
   ],
+  "web_accessible_resources": [
+    {
+      "resources": ["upload.html"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
   "host_permissions": [
     "https://5feet11.com/*",
     "https://aakartaro.com/products/*",
-    "https://www.botnia.in/products/",
+    "https://www.botnia.in/products/*",
     "https://www.urbanmonkey.com/products/*",
     "https://dashanddot.com/products/*"
   ]
